@@ -188,3 +188,35 @@ footer {
         font-size: 14px;
     }
 }
+/* Button styling for "Xem Tất Cả Chi Tiết" */
+.toggle-all-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-all-btn:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+/* Full details content */
+.all-details-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
