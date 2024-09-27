@@ -18,7 +18,7 @@ body.dark-mode {
     --button-color: #ff5722;
     --button-hover-color: #e64a19;
     --background-color: #121212;
-    --text-color: black;
+    --text-color: white;
     --card-bg: #2c2c2c;
 }
 
@@ -94,7 +94,7 @@ h2 {
 /* Usecase grid */
 .usecase-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -192,12 +192,18 @@ h2 {
     display: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.6s ease-out;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+}
+
+/* Ensuring the collapsible content is handled properly on mobile devices */
+.all-details-content.active {
+    display: block;
+    max-height: 1000px; /* Adjust max-height as needed */
 }
 
 /* Footer styling */
@@ -226,5 +232,23 @@ footer {
 
     .usecase-item .toggle-btn {
         font-size: 14px;
+    }
+
+    /* Adjust padding and margins for smaller screens */
+    main {
+        padding: 10px;
+    }
+
+    #usecase-section {
+        padding: 15px;
+    }
+
+    .toggle-all-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .all-details-content {
+        max-height: 800px; /* Adjusted for smaller screens */
     }
 }
