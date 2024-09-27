@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Nhà Kính Tự Động</title>
+    <link rel="stylesheet" href="khkt.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hệ Thống Nhà Kính Tự Động</h1>
+    </header>
+    
+    <main>
+        <section id="usecase-section">
+            <h2>Sơ Đồ Use Case</h2>
+            <div class="usecase-grid">
+                <!-- Use case items with collapsible content -->
+                <div class="usecase-item">
+                    <i class="fas fa-microchip icon"></i>
+                    <h3>1. Chuẩn bị phần cứng</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Mua các thiết bị cần thiết:</strong></p>
+                        <ul>
+                            <li><strong>Bộ vi điều khiển:</strong> Arduino hoặc Raspberry Pi.</li>
+                            <li><strong>Các loại cảm biến:</strong> Độ ẩm đất, nhiệt độ và độ ẩm không khí, ánh sáng.</li>
+                            <li><strong>Máy bơm nước:</strong> Kết nối với hệ thống tưới tiêu tự động.</li>
+                            <li><strong>Đèn LED và hệ thống quạt thông gió.</strong></li>
+                        </ul>
+                        <p><strong>Lắp đặt các cảm biến</strong> tại vị trí phù hợp để thu thập thông tin về đất, nhiệt độ, độ ẩm và ánh sáng.</p>
+                    </div>
+                </div>
+                <div class="usecase-item">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <h3>2. Lập trình bộ vi điều khiển</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Viết chương trình thu thập dữ liệu từ cảm biến:</strong></p>
+                        <ul>
+                            <li><strong>Sử dụng:</strong> Arduino IDE hoặc Python.</li>
+                            <li><strong>Kết nối với máy bơm nước:</strong> Hệ thống điều khiển đèn và quạt.</li>
+                            <li><strong>Gửi dữ liệu:</strong> Lên máy chủ qua MQTT hoặc HTTP.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="usecase-item">
+                    <i class="fas fa-database icon"></i>
+                    <h3>3. Xây dựng phần mềm quản lý</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Tạo cơ sở dữ liệu và xây dựng ứng dụng web:</strong></p>
+                        <ul>
+                            <li><strong>Sử dụng:</strong> MongoDB hoặc SQL Server để lưu trữ dữ liệu.</li>
+                            <li><strong>Tạo Dashboard:</strong> Hiển thị dữ liệu theo thời gian thực.</li>
+                            <li><strong>Cho phép điều khiển thiết bị:</strong> Qua giao diện.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="usecase-item">
+                    <i class="fas fa-robot icon"></i>
+                    <h3>4. Tích hợp trí tuệ nhân tạo</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Thu thập và phân tích dữ liệu để xây dựng mô hình AI:</strong></p>
+                        <ul>
+                            <li><strong>Sử dụng:</strong> TensorFlow hoặc scikit-learn để phân tích dữ liệu.</li>
+                            <li><strong>Dự đoán:</strong> Thời gian tưới nước dựa trên độ ẩm, nhiệt độ và ánh sáng.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="usecase-item">
+                    <i class="fas fa-vial icon"></i>
+                    <h3>5. Thử nghiệm hệ thống</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Chạy thử nghiệm:</strong> Hệ thống trong nhà kính và kiểm tra tính năng điều khiển tự động.</p>
+                    </div>
+                </div>
+                <div class="usecase-item">
+                    <i class="fas fa-cogs icon"></i>
+                    <h3>6. Tối ưu hóa hệ thống</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Điều chỉnh mô hình AI</strong> và cải thiện giao diện web để tối ưu hóa hệ thống.</p>
+                    </div>
+                </div>
+                <div class="usecase-item">
+                    <i class="fas fa-clipboard-check icon"></i>
+                    <h3>7. Triển khai thực tế và hoàn thiện báo cáo</h3>
+                    <button class="toggle-btn">Xem chi tiết</button>
+                    <div class="usecase-content">
+                        <p><strong>Triển khai hệ thống:</strong> Đầy đủ trong nhà kính và tổng hợp báo cáo kết quả.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hệ Thống Nhà Kính Tự Động &copy; 2024</p>
+    </footer>
+
+    <script>
+        // Script for collapsible sections with slide-down effect
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                if (content.style.display === 'block') {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    button.innerText = 'Ẩn bớt';
+                } else {
+                    content.style.maxHeight = '0';
+                    button.innerText = 'Xem chi tiết';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
