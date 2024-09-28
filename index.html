@@ -99,50 +99,60 @@
             </div>
             <button class="toggle-all-btn">Xem Tất Cả Chi Tiết <i class="fas fa-chevron-down"></i></button>
             <div class="all-details-content">
-                <p><strong><i class="fas fa-tools"></i> 1. Chuẩn bị phần cứng</strong></p>
+                <p><strong><i class="fas fa-tools"></i> 1. Chuẩn bị phần cứng</strong> <i class="fa-solid fa-x" style="color: red;"></i></p> 
                 <ul>
-                    <li><strong>Bộ vi điều khiển:</strong> Arduino hoặc Raspberry Pi.</li>
-                    <li><strong>Các loại cảm biến:</strong> Độ ẩm đất, nhiệt độ và độ ẩm không khí, ánh sáng.</li>
+                    <li><strong>Bộ vi điều khiển:</strong>
+                        <br>
+                         <b style="color: red;">+ Arduino Uno </b>: Đây là bộ vi điều khiển trung tâm để kết nối và thu thập dữ liệu từ các cảm biến.
+                    </li>
+                    <li><strong>Các loại cảm biến:</strong>
+                        <br>
+                        <b style="color: red;">+ Độ ẩm đất (Soil Moisture Sensor) </b>: Thường bao gồm hai phần: đầu dò và module xử lý tín hiệu.
+                        <br>
+                        <b style="color: red;">+ Nhiệt độ và độ ẩm không khí (DHT11/DHT22) </b>: Cho phép đo nhiệt độ và độ ẩm không khí.
+                        <br>
+                        <b style="color: red;">+ Ánh sáng (LDR hoặc BH1750)</b> : Đo cường độ ánh sáng.
+                    </li>
                     <li><strong>Máy bơm nước:</strong> Kết nối với hệ thống tưới tiêu tự động.</li>
                     <li><strong>Đèn LED và hệ thống quạt thông gió.</strong></li>
                 </ul>
                 <p>Lắp đặt các cảm biến tại vị trí phù hợp để thu thập thông tin về đất, nhiệt độ, độ ẩm và ánh sáng.</p>
 
-                <p><strong><i class="fas fa-code"></i> 2. Lập trình bộ vi điều khiển</strong></p>
+                <p><strong><i class="fas fa-code"></i> 2. Lập trình bộ vi điều khiển</strong> <i class="fa-solid fa-x" style="color: red;"></i></p>
                 <ul>
                     <li>Sử dụng Arduino IDE hoặc Python để lập trình thu thập dữ liệu từ các cảm biến.</li>
                     <li>Kết nối với máy bơm nước, hệ thống đèn và quạt để điều khiển từ xa.</li>
                     <li>Sử dụng giao thức MQTT hoặc HTTP để truyền dữ liệu đến máy chủ hoặc dịch vụ đám mây như Firebase.</li>
                 </ul>
 
-                <p><strong><i class="fas fa-database"></i> 3. Xây dựng phần mềm quản lý và điều khiển</strong></p>
+                <p><strong><i class="fas fa-database"></i> 3. Xây dựng phần mềm quản lý và điều khiển</strong> <i class="fa-solid fa-x" style="color: red;"></i></p>
                 <ul>
                     <li>Tạo cơ sở dữ liệu bằng MongoDB hoặc SQL Server để lưu trữ dữ liệu từ cảm biến.</li>
                     <li>Tạo ứng dụng web với dashboard hiển thị dữ liệu theo thời gian thực.</li>
                     <li>Cho phép người dùng điều khiển thiết bị thông qua giao diện web.</li>
                 </ul>
 
-                <p><strong><i class="fas fa-robot"></i> 4. Tích hợp trí tuệ nhân tạo (AI)</strong></p>
+                <p><strong><i class="fas fa-robot"></i> 4. Tích hợp trí tuệ nhân tạo (AI)</strong> <i class="fa-solid fa-x" style="color: red;"></i></p>
                 <ul>
                     <li>Thu thập dữ liệu từ cảm biến trong vài tuần hoặc tháng để huấn luyện mô hình AI.</li>
                     <li>Sử dụng TensorFlow hoặc scikit-learn để phân tích dữ liệu và xây dựng mô hình AI.</li>
                     <li>Tích hợp mô hình AI vào ứng dụng web để đưa ra quyết định tưới nước tự động.</li>
                 </ul>
 
-                <p><strong><i class="fas fa-vial"></i> 5. Thử nghiệm hệ thống</strong></p>
+                <p><strong><i class="fas fa-vial"></i> 5. Thử nghiệm hệ thống</strong> <i class="fa-solid fa-x" style="color: red;"></i></p>
                 <ul>
                     <li>Cài đặt hệ thống trong nhà kính và kiểm tra tính năng điều khiển tự động.</li>
                     <li>Theo dõi hoạt động của hệ thống khi mô hình AI đưa ra quyết định tưới nước.</li>
                 </ul>
 
-                <p><strong><i class="fas fa-cogs"></i> 6. Tối ưu hóa hệ thống</strong></p>
+                <p><strong><i class="fas fa-cogs"></i> 6. Tối ưu hóa hệ thống</strong> <i class="fa-solid fa-x" style="color: red;"></i></p>
                 <ul>
                     <li>Tinh chỉnh mô hình AI dựa trên dữ liệu thực tế để hệ thống hoạt động hiệu quả hơn.</li>
                     <li>Cải thiện giao diện web để dễ dàng sử dụng và theo dõi thông tin.</li>
                     <li>Bảo trì định kỳ các thiết bị cảm biến, máy bơm, và hệ thống điều khiển.</li>
                 </ul>
 
-                <p><strong><i class="fas fa-clipboard-check"></i> 7. Triển khai thực tế và hoàn thiện báo cáo</strong></p>
+                <p><strong><i class="fas fa-clipboard-check"></i> 7. Triển khai thực tế và hoàn thiện báo cáo</strong> <i class="fa-solid fa-x" style="color: red;"></i></p>
                 <ul>
                     <li>Triển khai hệ thống đầy đủ trong nhà kính và tiến hành trồng rau để kiểm tra hiệu quả.</li>
                     <li>Viết báo cáo tổng hợp toàn bộ quá trình triển khai và các vấn đề gặp phải.</li>
