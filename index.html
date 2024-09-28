@@ -160,6 +160,55 @@
                 </ul>
             </div>
         </section>
+                <!-- Enhanced FAQ Section -->
+                <section id="faq-section">
+                    <h2>Câu Hỏi Thường Gặp</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <button class="faq-question">1. Ứng dụng của hệ thống nhà kính tự động là gì? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p><strong>Hệ thống nhà kính tự động</strong> được sử dụng trong nông nghiệp thông minh để kiểm soát <strong>nhiệt độ</strong>, <strong>độ ẩm</strong>, và <strong>ánh sáng</strong> một cách tự động.</p>
+                                <p>Ứng dụng này giúp tối ưu hóa điều kiện phát triển cho cây trồng, đặc biệt hiệu quả cho việc trồng rau, hoa, và cây cảnh có giá trị cao, mang lại năng suất và chất lượng sản phẩm vượt trội.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">2. Lợi ích của việc sử dụng hệ thống nhà kính tự động là gì? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Sử dụng hệ thống nhà kính tự động giúp <strong>tiết kiệm chi phí lao động</strong> và <strong>tăng hiệu quả sản xuất</strong>. Hệ thống này tự động hóa việc tưới tiêu, kiểm soát ánh sáng và thông gió.</p>
+                                <p>Điều này giúp cây trồng phát triển tốt hơn và giảm thiểu rủi ro do điều kiện môi trường không thuận lợi.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">3. Làm thế nào để thiết lập hệ thống hiệu quả nhất? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p><strong>Chọn phần cứng phù hợp</strong>: Sử dụng cảm biến chất lượng để đo chính xác độ ẩm, nhiệt độ và ánh sáng.</p>
+                                <p><strong>Lập trình chính xác</strong>: Điều chỉnh việc tưới tiêu và kiểm soát môi trường dựa trên dữ liệu thu thập được.</p>
+                                <p><strong>Tích hợp AI</strong>: Sử dụng dữ liệu từ cảm biến để huấn luyện mô hình AI, giúp hệ thống tự động đưa ra các quyết định.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">4. Những khó khăn khi triển khai hệ thống nhà kính tự động là gì? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p><strong>Chi phí đầu tư ban đầu</strong> cao và yêu cầu kỹ thuật cao trong việc lắp đặt và lập trình hệ thống.</p>
+                                <p><strong>Tích hợp AI</strong> đòi hỏi dữ liệu lớn và chính xác. Bảo trì định kỳ các cảm biến và thiết bị là rất quan trọng để đảm bảo hoạt động ổn định.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">5. Làm thế nào để bảo trì hệ thống nhà kính tự động? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Kiểm tra và vệ sinh các <strong>cảm biến</strong>, <strong>máy bơm</strong>, <strong>đèn LED</strong>, và <strong>quạt thông gió</strong> thường xuyên.</p>
+                                <p>Định kỳ cập nhật phần mềm và kiểm tra kết nối mạng để đảm bảo dữ liệu được truyền tải một cách chính xác.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">6. Làm thế nào để tích hợp AI vào hệ thống nhà kính? <i class="fas fa-chevron-down"></i></button>
+                            <div class="faq-answer">
+                                <p>Thu thập dữ liệu từ các cảm biến trong một khoảng thời gian dài và sử dụng các công cụ như <strong>TensorFlow</strong> hoặc <strong>scikit-learn</strong> để xây dựng mô hình dự đoán.</p>
+                                <p>Đưa mô hình này vào phần mềm quản lý để hệ thống tự động đưa ra quyết định dựa trên điều kiện thực tế.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
     </main>
 
     <footer>
@@ -197,6 +246,29 @@
             });
         });
     </script>
+        <script>
+            // Dark mode toggle function
+
+    
+            // Collapsible FAQ sections
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const answer = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+                    const isVisible = answer.style.maxHeight;
+    
+                    if (isVisible) {
+                        answer.style.maxHeight = null;
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    }
+                });
+            });
+        </script>
 
 </body>
 </html>
